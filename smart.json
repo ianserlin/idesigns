@@ -4,8 +4,9 @@
     "tag": "release/blaze-rc0"
   },
   "packages": {
-    "useful": {
-      "path": "../meteor-useful-package"
+  	"useful": {
+      "git": "git@github.com:usefulio/meteor-useful-package.git",
+      "branch": "master"
     }
   }
 }

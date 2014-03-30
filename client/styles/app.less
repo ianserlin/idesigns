@@ -1,1 +1,89 @@
 @import "/packages/useful/bootstrap/less/bootstrap.lessimport";
+
+@navbar-inverse-bg: rgba(34,34,34,0.9);
+
+@navbar-height: 80px;
+@navbar-margin-bottom: 0px;
+
+@font-family-sans-serif: 'Special Elite', cursive;
+@font-family-serif: 'Special Elite', cursive;
+
+@text-color: #fefefe;
+@brand-primary: #e63b7a;
+@font-size-base: 20px;
+@neon-text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px @brand-primary, 0 0 70px @brand-primary, 0 0 80px @brand-primary, 0 0 100px @brand-primary, 0 0 150px @brand-primary;
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url(/img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+a.highlight {
+	background: rgba(255,255,255,0.75);
+	padding: 6px;
+}
+
+.logo {
+
+}
+
+.navbar {
+	font-size: 26px;
+	li:hover {
+		text-shadow: @neon-text-shadow;
+	}
+}
+
+.navbar-fixed-bottom {
+	bottom: 20px;
+}
+
+.product-slideshow {
+	width: 100%;
+	height: 500px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	.product {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 90%;
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			max-width: 300px;
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+			max-width: 300px;
+		}
+		@media (min-width: @screen-lg-min) {
+			max-width: 300px;
+		}
+	}
+}
+
+.product-image-zoom {
+	position: fixed;
+	background: rgba(0,0,0,0.9);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+#header {
+	ul {
+		li {
+			padding: 6px;
+			a {
+				color: #FFF;
+			}
+		}
+	}
+}

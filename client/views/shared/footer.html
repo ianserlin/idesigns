@@ -1,7 +1,26 @@
 <template name="Footer">
-	<div id="footer">
-		<div class="container">
-			<p class="text-muted">Footer here</p>
-		</div>
-	</div>
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-bottom visible-md visible-lg" role="navigation">
+		<ul class="nav navbar-nav">
+			<li>
+				{{#linkTo route="home"}}
+					i. DESIgns
+				{{/linkTo}}
+			</li>
+			<li>
+				{{#linkTo route="about"}}
+					About
+				{{/linkTo}}
+			</li>
+			<li>
+				{{#linkTo route="contact"}}
+					Contact
+				{{/linkTo}}
+			</li>
+			<li>
+				<a href="http://iloveidesigns.etsy.com">
+					Shop
+				</a>
+			</li>
+		</ul>
+	</nav>
 </template>

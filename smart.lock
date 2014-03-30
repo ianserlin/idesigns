@@ -7,12 +7,15 @@
   "dependencies": {
     "basePackages": {
       "useful": {
-        "path": "../meteor-useful-package"
+        "git": "git@github.com:usefulio/meteor-useful-package.git",
+        "branch": "master"
       }
     },
     "packages": {
       "useful": {
-        "path": "../meteor-useful-package"
+        "git": "git@github.com:usefulio/meteor-useful-package.git",
+        "branch": "master",
+        "commit": "50b3f5d61b89ebeef1583f23c7302c11d1a1c6b6"
       },
       "collection-hooks": {
         "git": "https://github.com/matb33/meteor-collection-hooks.git",
@@ -38,6 +41,11 @@
         "git": "https://github.com/jeeeyul/meteor-moment-with-langs.git",
         "tag": "v2.5.1",
         "commit": "75f725898f6d5c3dddc54f1f619fe3b184f596a2"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
       }
     }
   }

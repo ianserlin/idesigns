@@ -1,7 +1,31 @@
 <template name="Header">
 	<div id="header">
-		<div class="container">
-			Header Here.
+		{{#linkTo route="home"}}
+			<img src="/img/idesigns-logo-small.png" class="logo"/>
+		{{/linkTo}}
+		<div class="pull-right visible-sm visible-xs">
+			<ul class="list-unstyled">
+				<li>
+					{{#linkTo route="home"}}
+						Home
+					{{/linkTo}}
+				</li>
+				<li>
+					{{#linkTo route="about"}}
+						About
+					{{/linkTo}}
+				</li>
+				<li>
+					{{#linkTo route="contact"}}
+						Contact
+					{{/linkTo}}
+				</li>
+				<li>
+					<a href="http://iloveidesigns.etsy.com">
+						Shop
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </template>

@@ -1,5 +1,22 @@
 <template name="Home">
-	<div class="container">
-		Useful Home Page
+	<div class="product-slideshow">
+		{{#each images}}
+			{{> ProductImage}}
+		{{/each}}
 	</div>
+	{{> ProductImageZoom}}
+</template>
+
+<template name="ProductImage">
+	<div class="product">
+		<img src="{{src}}" class="img-responsive"/>
+	</div>
+</template>
+
+<template name="ProductImageZoom">
+	{{#with selectedProduct}}
+		<div class="product-image-zoom">
+			<img src="{{src}}" class="img-responsive"/>
+		</div>
+	{{/with}}
 </template>
