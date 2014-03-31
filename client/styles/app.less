@@ -1,9 +1,10 @@
 @import "/packages/useful/bootstrap/less/bootstrap.lessimport";
 
-@navbar-inverse-bg: rgba(34,34,34,0.9);
+@navbar-inverse-bg: rgba(0,0,0,0.5);
 
 @navbar-height: 80px;
 @navbar-margin-bottom: 0px;
+@navbar-inverse-link-color: #FFF;
 
 @font-family-sans-serif: 'Special Elite', cursive;
 @font-family-serif: 'Special Elite', cursive;
@@ -86,4 +87,18 @@ a.highlight {
 			}
 		}
 	}
+}
+
+.mobile-menu {
+	a {
+		color: #FFF;
+		&:hover {
+			text-shadow: @neon-text-shadow;
+		}
+	}
+	margin-bottom: 10px;
+}
+
+.logo:hover {
+	box-shadow: @neon-text-shadow;
 }

@@ -3,29 +3,27 @@
 		{{#linkTo route="home"}}
 			<img src="/img/idesigns-logo-small.png" class="logo"/>
 		{{/linkTo}}
-		<div class="pull-right visible-sm visible-xs">
-			<ul class="list-unstyled">
-				<li>
-					{{#linkTo route="home"}}
-						Home
-					{{/linkTo}}
-				</li>
-				<li>
-					{{#linkTo route="about"}}
-						About
-					{{/linkTo}}
-				</li>
-				<li>
-					{{#linkTo route="contact"}}
-						Contact
-					{{/linkTo}}
-				</li>
-				<li>
-					<a href="http://iloveidesigns.etsy.com">
-						Shop
-					</a>
-				</li>
-			</ul>
+		<div class="mobile-menu row text-center visible-xs visible-sm">
+			<div class="col-xs-3">
+				{{#linkTo route="home"}}
+					Home
+				{{/linkTo}}
+			</div>
+			<div class="col-xs-3">
+				{{#linkTo route="about"}}
+					About
+				{{/linkTo}}
+			</div>
+			<div class="col-xs-3">
+				{{#linkTo route="contact"}}
+					Contact
+				{{/linkTo}}
+			</div>
+			<div class="col-xs-3">
+				<a href="http://iloveidesigns.etsy.com">
+					Shop
+				</a>
+			</div>
 		</div>
 	</div>
 </template>
